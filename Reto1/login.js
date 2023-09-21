@@ -45,7 +45,7 @@ function validateFields() {
     if (email.value === "" || password.value === "") {
         msg += "Se deben completar todos los campos.";
     }
-    else if (!email.contains('@')) {
+    else if (!email.value.includes('@')) {
         msg += "El email debe contener un @";
     }
     else if (password.value.length > maxPasswordLength) {

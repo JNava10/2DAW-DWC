@@ -1,10 +1,3 @@
-const name = document.getElementById("name");
-const surnames = document.getElementById("surnames");
-const email = document.getElementById("email");
-const birthDate = document.getElementById("birthDate");
-const dni = document.getElementById("dni");
-const surnameList = surnames.split(' ');
-
 function fieldLengthIsValid(fieldValue, min, max) {
     let isValid = false;
     if (fieldValue.length > min && fieldValue < max) {
@@ -51,6 +44,13 @@ function dniFieldIsValid(dniValue) {
 }
 
 function validPersonData() {
+    const name = document.getElementById("name");
+    const surnames = document.getElementById("surnames");
+    const email = document.getElementById("email");
+    const birthDate = document.getElementById("birthDate");
+    const dni = document.getElementById("dni");
+    const surnameList = surnames.value.split(' ');
+
     if (
         fieldLengthIsValid(name.value, 3, 30) &&
         fieldLengthIsValid(surnameList[0], 2, 30) &&
