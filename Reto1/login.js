@@ -1,8 +1,3 @@
-const login = {
-    email: '',
-    password: ''
-};
-
 /**
  * @return number
  * 0 -> Validation is false,

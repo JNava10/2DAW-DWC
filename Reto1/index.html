@@ -5,23 +5,22 @@
     <title>Title</title>
 </head>
 <body>
-<script src="info.js"></script>
 <div>
-    <label for="name">Introduce tu nombre</label><input placeholder="Introduce tu nombre" type="text" id="name">
+    <label for="name">Introduce tu nombre</label><input value="" placeholder="Nombre" type="text" id="name">
 </div>
 <div>
-    <label for="surnames">Introduce tu apellidos</label><input placeholder="password" type="text" id="surnames">
+    <label for="surnames">Introduce tu apellidos</label><input value="" placeholder="Apellidos" type="text" id="surnames">
 </div>
 <div>
-    <label for="password">Introduce tu correo</label><input placeholder="password" type="text" id="password">
+    <label for="birthDate">Introduce tu fecha de nacimiento</label><input value="" placeholder="Fecha de nacimiento" type="text" id="birthDate">
 </div>
 <div>
-    <label for="dni">Introduce tu dni</label><input placeholder="dni" type="text" id="dni">
+    <label for="dni">Introduce tu dni</label><input value="" placeholder="DNI" type="text" id="dni">
 </div>
 <div>
-    <button id="reset">Reiniciar</button>
-    <button id="delete">Borrar</button>
+    <button id="delete" onclick="clean()">Borrar</button>
+    <button onclick="validPersonData()">Enviar</button>
 </div>
-<button onclick="validPersonData()">Enviar</button>
+<script src="app.js"></script>
 </body>
 </html>
